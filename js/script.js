@@ -88,7 +88,7 @@ $(document).ready(function() {
     $("#logoutNav").click(function(event) {
     	event.preventDefault();
     	deleteCookie('x-access-token');
-    	window.location.href = "/2017-04-30/index.html"
+    	window.location.href = "/2017-04-30/index.html";
     	
     });
 
