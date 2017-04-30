@@ -73,7 +73,7 @@ $(document).ready(function() {
                     if (response.success) {
                         var cookie = "x-access-token=" + response.token;
                         document.cookie = cookie;
-                        window.location.href = "2017-04-30/index.html";
+                        window.location.href = "/2017-04-30/index.html";
 
                     } else {
                         alert(response.message);
@@ -88,7 +88,7 @@ $(document).ready(function() {
     $("#logoutNav").click(function(event) {
     	event.preventDefault();
     	deleteCookie('x-access-token');
-    	window.location.href = "/index.html"
+    	window.location.href = "/2017-04-30/index.html"
     	
     });
 
