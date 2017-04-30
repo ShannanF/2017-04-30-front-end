@@ -40,7 +40,7 @@ $(document).ready(function() {
 
         if (username && password) {
             //AJAX
-            $.post("http://open-commerce.herokuapp.com/api/signup", {
+            $.post("https://open-commerce.herokuapp.com/api/signup", {
 
                     username: username,
                     password: password,
@@ -65,7 +65,7 @@ $(document).ready(function() {
         var username = $("#username").val();
         var password = $('#password').val();
         if (username && password) {
-            $.post("http://open-commerce.herokuapp.com/api/login", {
+            $.post("https://open-commerce.herokuapp.com/api/login", {
                     username: username,
                     password: password
                 },
@@ -73,7 +73,7 @@ $(document).ready(function() {
                     if (response.success) {
                         var cookie = "x-access-token=" + response.token;
                         document.cookie = cookie;
-                        window.location.href = "/index.html";
+                        window.location.href = "2017-04-30/index.html";
 
                     } else {
                         alert(response.message);
